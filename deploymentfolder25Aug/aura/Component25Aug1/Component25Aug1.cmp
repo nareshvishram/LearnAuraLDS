@@ -1,0 +1,22 @@
+<aura:component>
+    <aura:attribute name="flag" type="boolean" default="true"/>
+    <aura:attribute name="confirmMessage" type="boolean" default="false"/>
+    <aura:if isTrue="{!v.flag}">
+        <lightning:recordEditForm  objectApiName="Account" onsuccess="{!c.successAction}" onsubmit="{!c.submitAction}" aura:id="form">
+            <lightning:card title="Edit an Account" iconName="standard:account" class="slds-var-m-around_medium">
+                <lightning:inputField fieldName="Name"/>
+                <lightning:inputField fieldName="Type"/>
+                <lightning:inputField fieldName="Industry"/>
+                <lightning:inputField fieldName="Phone"/>
+                <aura:set attribute="actions">
+                    <lightning:button label="Update" type="submit"/>
+                </aura:set>
+            </lightning:card>
+        </lightning:recordEditForm>
+    </aura:if>
+    <aura:if isTrue="{!v.confirmMessage}">
+        <ui:message title="Confirmation" closable="true" severity="confirm">
+            Record Inserted Successfully!!
+        </ui:message>
+    </aura:if>
+</aura:component>	

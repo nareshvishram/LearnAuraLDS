@@ -1,0 +1,8 @@
+<aura:component>
+    <Aura:attribute name="flag" type="boolean" default="false"/>
+    <lightning:button label="Btn1" onclick="{!c.doInvoke}"/>
+    {!v.body}
+    <aura:if isTrue="{!v.flag}">
+        <lightning:button label="Btn3" onclick=""/>
+    </aura:if>
+</aura:component>	

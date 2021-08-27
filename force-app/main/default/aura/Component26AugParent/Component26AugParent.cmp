@@ -1,0 +1,4 @@
+<aura:component>
+    <lightning:button label="Button 1" onclick="{!c.invoke}"/>
+    <c:Component26AugChild aura:id="child_one"/>
+</aura:component>	

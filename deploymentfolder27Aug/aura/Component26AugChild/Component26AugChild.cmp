@@ -1,0 +1,9 @@
+<aura:component>
+    <aura:attribute name="boolFlag" type="boolean" default="false"/>
+    <aura:method name="btn2Action" action="{!c.btn2Action}">
+        <aura:attribute name="flag" type="boolean"/>
+    </aura:method>
+    <aura:if isTrue="{!v.boolFlag}">
+        <lightning:button label="btn2" onclick="{!c.invoke}"/>
+    </aura:if>
+</aura:component>	

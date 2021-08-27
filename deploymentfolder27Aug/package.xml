@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <name>AuraDefinitionBundle</name>
+    <members>AccInfo25Aug</members>
+    <members>App1</members>
+    <members>Component25Aug1</members>
+    <members>Component25Aug2</members>
+    <members>Component25Aug3</members>
+    <members>Component25Aug4</members>
+    <members>Component26AugC1</members>
+    <members>Component26AugC2</members>
+    <members>Component26AugChild</members>
+    <members>Component26AugChild2</members>
+    <members>Component26AugParent</members>
+    <members>Component26AugParent2</members>
+    <members>Component27AugImplementsInterface27Aug1</members>
+    <members>Interface27Aug1</members>
+    <members>employeeInterface1</members>
+  </types>
+  <types>
+    <name>ApexClass</name>
+    <members>Apex26AugQueryAll</members>
+    <members>HelloWorld</members>
+  </types>
+  <version>52.0</version>
+</Package>

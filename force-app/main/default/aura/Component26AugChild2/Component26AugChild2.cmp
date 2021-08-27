@@ -1,0 +1,13 @@
+<aura:component controller="Apex26AugQueryAll">
+    <aura:attribute name="acc" type="Account[]"/>
+    <aura:attribute name="boolFlag" type="boolean" default="false"/>
+    <aura:attribute name="columns" type="list"/>
+    <aura:method name="queryAll" action="{!c.queryAll}">
+        <aura:attribute name="flag" type="boolean"/>
+    </aura:method>
+    <aura:if isTrue="{!v.boolFlag}">
+        <lightning:card title="All Accounts" iconName="utility:list">
+            <lightning:datatable data="{!v.acc}" keyField="id" columns="{!v.columns}"></lightning:datatable>
+        </lightning:card>
+    </aura:if>
+</aura:component>	

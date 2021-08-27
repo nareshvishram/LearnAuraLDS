@@ -1,0 +1,6 @@
+<aura:interface description="Interface template">
+  <aura:attribute name="name" type="String"/>
+  <aura:attribute name="phone" type="String"/>
+  <aura:attribute name="city" type="String"/>
+  <aura:attribute name="country" type="String"/>
+</aura:interface>

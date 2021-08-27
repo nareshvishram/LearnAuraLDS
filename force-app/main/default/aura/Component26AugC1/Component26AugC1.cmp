@@ -1,0 +1,9 @@
+<aura:component implements="c:employeeInterface1">
+    <aura:attribute name="employeeCount" type="integer"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    Name:{!v.name}<br/>
+    Phone:{!v.phone}<br/>
+    city:{!v.city}<br/>
+    Country:{!v.country}<br/>
+    Total Employees:{!v.employeeCount}
+</aura:component>	

@@ -1,0 +1,18 @@
+<aura:component>
+    <lightning:recordEditForm objectApiName="Account" onsuccess="{!c.callQueryAllComponent}">
+        <lightning:card title="Insert New Account" iconName="standard:account" class="slds-var-m-around_xx-large" >
+            <aura:set attribute="actions">
+                <lightning:buttonGroup>
+                    <lightning:button label="Save" type="submit" name="submit"/>
+                </lightning:buttonGroup>
+            </aura:set>
+            <div style="padding:10px;">
+                <lightning:inputField fieldName="Name"/>
+                <lightning:inputField fieldName="Type"/>
+                <lightning:inputField fieldName="Industry"/>
+            </div>
+        </lightning:card>
+    </lightning:recordEditForm> 
+    <!--Call child component-->
+    <c:Component26AugChild2 aura:id="child_one"/>
+</aura:component>	

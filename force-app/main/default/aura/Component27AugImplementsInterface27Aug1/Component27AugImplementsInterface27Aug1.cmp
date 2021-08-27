@@ -1,0 +1,15 @@
+<aura:component implements="c:Interface27Aug1">
+    <aura:attribute name="flag" type="boolean" default="false"/>
+    <!--Override attributes from interface-->
+    <aura:attribute name="myName" type="string"/>
+    <aura:attribute name="myEmail" type="string"/>
+    <aura:attribute name="myPhone" type="string"/>
+    <aura:attribute name="myState" type="string"/>
+    <lightning:button name="btn1" label="Show User Details" onclick="{!c.showDetails}"/>
+    <aura:if isTrue="{!v.flag}">
+        Name : {!v.myName}<br/>
+        Email: {!v.myEmail}<br/>
+        Phone: {!v.myPhone}<br/>
+        State: {!v.myState}
+    </aura:if>
+</aura:component>	

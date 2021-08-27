@@ -1,0 +1,14 @@
+<aura:component>
+    <aura:attribute name="name" type="string" default="Mirketa"/>
+    <aura:attribute name="type" type="string" default="Prospect"/>
+    <aura:attribute name="industry" type="string" default="Technology"/>
+    <div style="margin-left:100px;margin-top:20px;width:500px;border:1px solid green">
+        <lightning:card title="Account Info" iconName="standard:account">
+            <div style="padding:20px">
+                Name    : {!v.name}<br/>
+                Type    : {!v.type}<br/>
+                Indusrty: {!v.industry}
+            </div>
+        </lightning:card>
+    </div>
+</aura:component>	

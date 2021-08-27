@@ -1,0 +1,4 @@
+<aura:component>
+    <lightning:button label="Show Account Info" onclick="{!c.doInvoke}"/>
+    {!v.body}
+</aura:component>	
